@@ -1,0 +1,38 @@
+body {
+    
+}
+
+p {
+
+}
+
+#lihavoitu {
+    display: inline;
+    font-weight: bold;
+}
+
+main {
+    width: 50%;
+    margin-left: 10%;
+    height: 600px;
+    display: inline-block;
+    border: 2px solid #000000;
+}
+
+#kuva {
+    display: inline-block;
+    width: 30%;
+    border: 1px solid #000000;
+}
+
+.teksti {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #000000;
+}
+
+.div2 {
+    display: inline-block;
+    width: 15%;
+    border: 1px solid #000000;
+}

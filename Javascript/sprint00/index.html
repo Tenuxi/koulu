@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tiimiesittely</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo"><img src="./logo.png" alt="logo"></div>
+    <div id="date"></div>
+    <nav id="main-menu">
+      <ul>
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="team.html">Tiimi</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Javascript-ohjelmointi</h1>
+    <h2>AKA</h2>
+	<p>Business college Helsinki, PHP19
+    <hr>
+    <div>
+      <h2>Aaltonen Joonas</h2>
+      <h3 class='status'>Status: planned</h3>
+      <p>linkit harjoituksiin:</p>
+      <ul>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/sprint00/">Sprintti 0</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/sprint01/">Sprintti 01</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/sprint02/">Sprintti 02</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/sprint03/">Sprintti 03</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/t04/">Sprintti t4</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/t05/">Sprintti t5</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/harjoitus01/">Harjoitus 01</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/harjoitus02/">Harjoitus 02</a></li>
+        <li><a href="https://public.bc.fi/s1900622/Javascript/reaktiopeli/">Reaktiopeli</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div>
+      <h2>Altunin Vladislav</h2>
+      <h3 class='status'>Status: planned</h3>
+      <p>linkit harjoituksiin:</p>
+      <ul>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 1</a></li>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 2</a></li>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 3</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div>
+      <h2>Keski-Honkola Juha</h2>
+      <h3 class='status'>Status: planned</h3>
+      <p>linkit harjoituksiin:</p>
+      <ul>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 1</a></li>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 2</a></li>
+        <li><a style="text-decoration:line-through;" href="#">Harjoitus 3</a></li>
+      </ul>
+    </div>
+    <hr>
+  </main>
+  <footer></footer>
+</body>
+<script type="text/javascript">
+  const date = new Date();
+  const elem = document.getElementById('date');
+  elem.textContent = date.toLocaleDateString('FI');
+</script>
+</html>

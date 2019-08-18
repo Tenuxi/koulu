@@ -1,0 +1,53 @@
+## Kysymyksiä
+
+
+
+1.  Ohjelmointitehtävässä esiintyvät seuraavat selektorit. Selitä kustakin,
+    mihin elementteihin niihin liittyvät säännöt kohdistuvat:
+
+    ```
+        body,html {…} -> body on html elementin sisällä oleva "pää kohta"
+        .keys {…} -> avain arvo
+        audio[data-key="65"] {…} -> napin audioelementin avain
+        .key[data-key=”71” {…} -> avaimen näppäin
+    ```
+
+    Selitä myös tehtävässä 1 esiintyneet
+
+    ```
+        #laskuri {…} -> tyylitiedoston "ID"
+        * {…} -> kaikki elementit
+    ```
+
+2.  Ohjelmointitehtävässä ei käytettykään DOM-olioiden hakuun aiemmista
+    tehtävistä tuttuja metodeja ```document.getElementById()``` ja
+    ```getElementsByClass()``` vaan metodeja ```document.querySelector()``` ja
+    ```document.querySelectorAll()```. Selitä, miten ne toimivat.
+
+        elementbyid -> ottaa tietyn elementin IDn perusteella 
+        byclass -> Elementti luokan mukaan
+        queryselector -> voi valita vain tietyn osan minkä tarvitsee
+        selectorall -> valitsee kaiken mihin viitataan
+
+3.  Testaa ohjelmasi ainakin kolmella eri selaimella ja raportoi tulokset.
+    Vihje: testiraportista pitää selvitä ainakin, millä selaimilla ja
+    selainversoilla testattiin, ja jos jokin ongelma löytyi, mikä ei toiminut.
+
+        chrome -> toimii niinkuin pitää
+        firefox -> toimi samanlailla kuin cromellakin
+        ie -> mikään ei toimi niinkuin pitäisi
+        edge -> toimii sinnepäin (äänet kuuluu ja css on melkein oikein)
+
+4.  HTML-elementti `audio` osaa äänitiedostojen soittamisen lisäksi tarjota myös
+    soittimen ohjauskontrollit (play, pause, stop jne.). Kokeile soittimen
+    upottamista jollekin web-sivulle ja anna linkki sivullesi.
+
+        SOITIN.HTML
+
+5.  Audio-elementti on HTML5-ominaisuuksista vain yksi. Esittele kolme muuta 
+    mielestäsi kiinnostavaa HTML5-ominaisuutta ja kerro lyhyesti, mitä niillä
+    voi tehdä.
+
+        uudet osat divien tilalle kuten <article> <main> ....
+        uudet media elementit <video> <audi>...
+        uudet "input"tyypit

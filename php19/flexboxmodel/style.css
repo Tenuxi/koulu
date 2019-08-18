@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: #ffffff;
+    background-color: #131313;
+}
+
+h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-shadow: 3px 3px red;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Gugi', cursive;
+}
+
+footer {
+    clear: both;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Gugi', cursive;
+}
+
+header {
+    margin: 25px;
+}
+
+article { 
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    
+}
+
+.parent > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    
+}
+
+.parent2 > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+    
+}
+
+.parent3 > * {
+    flex-basis: 0px;
+    flex-grow: 1;
+    order: 2;
+}
+
+.parent2 .sininen {
+    flex-grow: 2;
+}
+
+.parent3 .vihrea {
+    order: 1;
+}
+
+.punainen {
+    margin-top: 5px;
+    background: linear-gradient(to right, rgba(255,168,193,1) 0%, rgba(230,67,89,1) 49%, rgba(255,168,193,1) 100%);
+    background-color: #ff0000;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 25px;
+}
+
+.sininen {
+    margin-top: 5px;
+    background: linear-gradient(to right, rgba(181,168,255,1) 0%, rgba(25,25,176,1) 49%, rgba(181,168,255,1) 100%);    background-color: #3139a5;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 25px;
+}
+
+.vihrea {
+    margin-top: 5px;
+    background: linear-gradient(to right, rgba(233,255,166,1) 0%, rgba(146,232,66,1) 49%, rgba(233,255,166,1) 100%);
+    background-color: #4f9c10;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 25px;
+}

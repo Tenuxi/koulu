@@ -1,0 +1,49 @@
+    body {
+        background: #3e4444;
+    }
+    
+    h1 {
+        color: #000000;
+        text-align: center;
+        font-size: 125%;
+    }
+
+    td {
+        background-color: #ade1fa;
+        text-align: center;
+    }
+
+    tr {
+        background-color: #ade1fa;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    #tyhja {
+        background-color: #ffffff;
+    }
+    #otsikko {
+        text-align: left;
+    }
+        
+    .container {
+        margin: 0 auto;
+        width: 75%;
+    }
+        
+    .lomake {
+        background-color: #ffffff;
+        margin-top: 15px;
+        border: 1px solid #000000;
+        min-width: 600px;
+        max-width: 100%;
+        padding-top: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+    }
+
+ 

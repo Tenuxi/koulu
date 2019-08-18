@@ -1,0 +1,45 @@
+## Kysymyksiä
+Tällä kertaa kysymykset on muotoiltu pieniksi ohjelmointiharjoituksiksi. 
+
+1. Laadi sivu, jossa määrittelet literaalin oliolle ja tulostat sen konsoliin. Oliolla tulee olla seuraavat ominaisuudet ja arvot:
+   - nimi, arvona olio, jolla on ominaisuudet etunimi ja sukunimi
+   - ika, arvona numero
+   - sukupuoli, arvona merkkijono
+   - harrastukset, arvona lista, jossa on merkkijonoja
+   - jasen, arvona totuusarvo
+
+        let henkilo = {
+               nimi: {etunimi: "Pertti", sukunimi: "Nieminen"},
+               ika: 40,
+               sukupuoli: "mies",
+               harrastukset: ["keilaus", "uinti", "kalastus"],
+               jasen: true,
+           };
+           console.log(henkilo);
+        let henkilo2 = JSON.stringify(henkilo);
+           console.log(henkilo2);
+
+2. Lisää edellisen tehtävän sivulle olion tulostus sivulle JSON-muodossa.
+
+        let olio = {};
+           olio.etunimi = "Magnus";
+           olio.sukunimi = "von Wright";
+           olio.etunimi = "Ferdinand";
+           delete olio.etunimi;    // tai: delete olio["etunimi"];
+
+2. Laadi sivu, joka toteuttaa seuraavat toiminnot ja tulostaa jokaisen toiminnon jälkeen olion konsoliin
+   - luo tyhjä olio
+   - lisää oliolle ominaisuus etunimi ja anna sille arvo Magnus
+   - lisää oliolle ominaisuus sukunimi ja anna sille arvo von Wright
+   - Muuta ominaisuuden etunimi arvoksi Ferdinand
+   - Poista ominaisuus etunimi oliosta. 
+
+3. Laadi sivu, jolla 
+käyttäjä voi syöttää JSON-merkkijonon,
+ohjelma muuttaa merkkijonon JavaScript-olioksi ja tulostaa sen konsoliin.
+
+        function muutaOlioksi() {
+         let teksti = document.getElementById("tekstikentta").value;
+         let olio = JSON.parse(teksti);
+         console.log(olio);
+    }

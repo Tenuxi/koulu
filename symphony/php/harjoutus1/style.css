@@ -1,0 +1,16 @@
+body{
+    background-color: #171717;
+    color: #ffffff;
+    text-align: center;
+}
+
+header{
+    color: #000000;
+    border-bottom: #ffffff solid 2.5px;
+    box-shadow: 0 5px 5px #ffffdd;
+}
+
+#keltainen{
+    margin-left: 30%;
+    width: 40%;
+}

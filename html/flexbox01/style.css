@@ -1,0 +1,59 @@
+body {
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height:800px;
+    justify-content: space-between;
+}
+
+.divit {
+    flex-basis: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+#sininen {
+    background-color: blue;
+    order: 8;
+}
+
+#keltainen {
+    background-color: yellow;
+    order: 7;
+}
+
+#liila {
+    background-color: #f506d5;
+    order: 6;
+}
+
+#oranssi {
+    background-color: #f5a106;
+    order: 5;
+}
+
+#valkoinen {
+    background-color: #fffbff;
+    order: 4;
+}
+
+#harmaa {
+    background-color: #6e6d6e;
+    order: 3;
+}
+
+#punainen {
+    background-color: #f50606;
+    order: 2;
+}
+
+#musta {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    order: 1;
+}

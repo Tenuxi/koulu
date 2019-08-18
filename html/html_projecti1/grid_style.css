@@ -1,0 +1,33 @@
+body {
+    background-color: #c8c0f8;
+}
+
+.header {
+    display: grid | inline-grid;
+    background-color: #b14040;
+}
+
+.logo {
+    background-color: #b14040;
+}
+
+.content {
+    background-color: #b14040;
+}
+
+.right {
+    background-color: #b14040;
+}
+
+.left {
+    background-color: #b14040;
+}
+
+.footer {
+    background-color: #b14040;
+}
+
+.container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }

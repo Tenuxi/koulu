@@ -1,0 +1,24 @@
+Vastaukset kysymyksiin:
+
+
+1. "f12" napilla
+
+2. <head> t‰gin sis‰ll‰ voidaan ladata suoraan koodia,
+ <body> koodin v‰liss‰ voi eritell‰ <srcipt>kun haluaa ajaa javascripti‰,
+Koodin voi ladata edellisest‰ tiedostosta
+
+3. koodi on helpompi lukuista erillesess‰ tiedostossa
+
+4.<div†id="aktiivinen"/>Klikkaa mua!</div>
+a)var element = document.getElementById('aktiivinen');
+b)element.onclick = klikkaus;
+c)element.innerhtml = 'Klikattu';
+d)element.style.color = 'gray';
+
+5.onclick = Painallus jossain tietyss‰ elementiss‰
+hover = Huomaa jos hiiri on p‰‰ll‰
+load = Lataus vaiheen p‰‰tytty‰
+onmouseover = kun hiiri oluu elementtiin
+onmouseout = kun hiiri l‰htee elementin p‰‰lt‰ 
+
+6.<p id="id1>teksti‰</p> ..... document.getElementById('id1').style.color = 'red'

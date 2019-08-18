@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Form harjoitus</title>
+    </head>
+
+<body>
+    <div class="container">
+           
+        <div class="header header">
+                <h1>Form harjoitus</h1>
+
+        </div>
+
+        <p id="teksti">Pienin tarkkuus "Puhelimille" ja isompi tietokoneille (Testaus)</p>
+
+        <div class="lomake">
+            <form>
+                <table>
+                   
+                    <tr>
+                       <td colspan="3"><h2 id="otsikko">Kysely kaavake</h2></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><h3>Koko nimi</h3></td>
+                    </tr>
+
+                    <tr>
+                        <td>Etunimi <input type="text" name="etunimi" value="Etunimi"></td>
+                        <td>Sukunimi <input type="text" name="sukunimi" value="Sukunimi"></td>
+                    </tr>
+
+                    <tr>
+                    <td colspan="3"><h3>Yhteystiedot</h3></td>
+                    </tr>
+
+                    <tr>
+                        <td>Katuosoite <input type="text" name="katu"></td>
+                        <td>Postinumero <input type="text" name="postinumero"></td>
+                        <td>Kaupunki <input type="text" name="kaupunki"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3"><h3>Sukupuoli</h3></td>
+                    </tr>
+
+                    <tr>
+                        <td>Mies<input type="radio" name="sukupuoli" value="Mies"></td>
+                        <td>Nainen<input type="radio" name="sukupuoli" value="Nainen"></td>
+                    </tr>
+
+                    <tr>
+                    <td colspan="3"><h3>Harrastukset</h3></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="pyoraily" value="pyoraily">Pyöräily</td>
+                        <td><input type="checkbox" name="kavely" value="kavely">Kävely</td>
+                        <td><input type="checkbox" name="jooga" value="jooga">Jooga</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="retkeily" value="retkeily">Retkeily</td>
+                        <td><input type="checkbox" name="golf" value="golf">Golffaus</td>
+                        <td><input type="checkbox" name="veneily" value="veneily">Veneily</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="melonta" value="melonta">Melonta</td>
+                        <td><input type="checkbox" name="vaellus" value="vaellus">Vaellus</td>
+                        <td><input type="checkbox" name="ratsastus" value="ratsastus">Ratsastus</td>
+                    </tr>
+    
+                    <tr>
+                        <td colspan="2"><h3>Haluatko roskapostia sähköpostiisi</h3></td>
+                        <td><select name="postia">
+                        <option value="kylla">Kyllä</option>
+                        <option value="ei">Ei</option>
+                        </td>
+                    </tr>
+
+                </table>
+                <br>
+                <input type="button" value="Lähetä">
+            </form>
+            
+        </div>
+
+        <div class="footer">
+            <p id=footer>footer</p>
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+</html>

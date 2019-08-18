@@ -1,0 +1,79 @@
+    body {
+        background: #3e4444;
+    }
+    
+    h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 125%;
+    }
+
+    h2 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    h3 {
+        color: #000000;
+        font-weight: bold;
+        font-size: 18;
+    }
+
+    td {
+        height:  100%;
+    }
+
+    tr {
+        max-width: 100%;
+    }
+
+    #otsikko {
+        text-align: center;
+    }
+
+    #teksti {
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .header {
+        background-color: #405d27;
+        width: 100%;
+        min-height: 35px;
+        border: 1px solid #000000;
+    }
+        
+    .container {
+        margin: 0 auto;
+        width: 75%;
+    }
+        
+    .lomake {
+        background-color: #ffffff;
+        margin-top: 15px;
+        border: 1px solid #000000;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+    .footer {
+        background-color: #405d27;
+        width: 75%;
+        height: 35px;
+        border: 1px solid #000000;
+        position: fixed;
+        bottom: 0;
+    }
+    
+    #footer {
+        color: #ffffff;
+        text-align: center;
+    }
+
+ 

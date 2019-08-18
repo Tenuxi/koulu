@@ -1,0 +1,53 @@
+body {
+    background-color: beige;
+}
+
+.content{
+    height: 550px;
+    width: 550px;
+    text-align: center;
+    padding-left: 15%;
+}
+
+table {
+    border: 1px solid #ffffff;
+    width: 500px;
+    height: 500px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+tr {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    color: #ffffff;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 98%;
+    height: 98%;
+    text-align: center;
+}
+
+input[type="button"] {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+}
+
+#yhtalo {
+    background-color: #ca1616;
+    color: #ffffff;
+    font-size: 18px;
+    width: 98%;
+    height: 98%;
+    border-radius: 10px;
+}

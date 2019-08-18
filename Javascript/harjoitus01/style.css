@@ -1,0 +1,32 @@
+body {
+    background-color: #fdcdcd;
+}
+
+header {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 5px 3px 3px #000000;
+}
+
+main {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
+    margin: 10%;
+    min-height: 300px;
+    display: block;
+    box-shadow: 10px 3px 10px #000000;
+}
+
+article {
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tulostus {
+    margin: 20%;
+}

@@ -1,0 +1,21 @@
+body{
+    background-color: #131313;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.tehtava1{
+    float: left;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.tehtava2{
+    float: left;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+}

@@ -1,0 +1,67 @@
+## Kysymyksi‰
+
+1.  Selit‰
+
+    -   mik‰ on muuttuja (variable) ja miten sellainen m‰‰ritell‰‰n
+        (JavaScriptissa),
+
+            Muuttujaksi voidaan m‰‰ritell‰ mit‰ milloinkin haluaa esim -> "var x = y;"
+
+    -   miten muuttujalle voidaan antaa arvo,
+
+            esim n‰in -> "var x = y;"
+
+    -   miten muuttujan arvo voidaan hakea ohjelmassa.
+
+            esim n‰in -> "const muuttuja = 'muuttujanarvo';"
+
+2.  Selit‰, miten If-else ñlause toimii ja miten sellainen laaditaan
+    JavaScript-kielell‰. Anna esimerkkej‰ ja selit‰ esimerkkisi.
+
+            Jos ohjelman t‰ytyy tehd‰ kaksi eri k‰skysarjaa riippuen jonkin ehtolauseen tuloksesta, k‰yt‰mme if-else -rakennetta.
+            "if(EHTO) {
+                jos jokin toteutuu se tehd‰‰n;
+            } else {
+                Jos edellinen ei toteutunut niin suoritetaan t‰m‰;
+            }
+
+3.  Selit‰, miten while-lause toimii ja miten sellainen laaditaan
+    JavaScript-kielell‰. Anna esimerkkej‰ ja selit‰ esimerkkisi.
+
+        While looppia toistetaan niinkauan ett‰ arvo toteutuu
+        let luku = 100;
+        while (luku<200){
+            console.log(luku);
+            luku = luku + 50;
+        }
+
+4.  Mit‰ muita toistorakenteita kieless‰ on?
+
+        do-while (Ensin tehd‰‰n do ja sitten rakistetaan t‰ytyykˆ tehd‰ while)
+        for ( melkein sama kuin edellinen mutta tiivistetympi versio)
+
+5.  Selit‰
+
+    -   mik‰ on funktio ja miten sellainen m‰‰ritell‰‰n JavaScriptiss‰,
+
+        functio suorittaa jonkun tietyn toiminnon ja sit‰ voidaan tarvittaessa kutsua
+        function functionNimi(parametrit) {
+            Funktion komennot ja toiminnallisuus;
+        }
+
+    -   mik‰ on funktion parametri (parameter) ja miten sille voidaan antaa arvo
+        (argument),
+
+            functiolle voidaan antaa para metrej‰ esim -> 
+            function functionNimi(nimi, ika){
+                document.write("minun koirani nimi on: " + nimi + "ja sen ik‰ on: " + ika);
+            }
+            functionNimi ("Pasi", 3);
+            
+    -   mik‰ on funktion paluuarvo ja miten se asetetaan.
+
+            function summa(a,b) {
+                return a + b;
+            }
+            var tulos = summa (10, 60);
+            

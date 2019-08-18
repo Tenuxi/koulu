@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Form harjoitus</title>
+    </head>
+
+<body>
+    <div class="container">
+           
+        <div class="header header">
+                <h1>Form harjoitus</h1>
+
+        </div>
+
+        <p id="teksti">Pienin tarkkuus "Puhelimille" ja isompi tietokoneille (Testaus)</p>
+
+        <div class="lomake">
+            <form>
+                    <table>
+                            <tr>
+                                    <td colspan="3"><p id="otsikko">Kerro ensin hieman itsestäsi, mikä on nimesi ja sukunimesi?</p></td>
+        
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="etunimi" value="Etunimi"></td>
+                                <td><input type="text" name="toinennimi" value="Toinen nimi (Opitional)"></td>
+                                <td><input type="text" name="sukunimi" value="Sukunimi"></td>
+                            </tr>
+        
+                            <tr>
+                                <td id="tyhja"></td>
+                            </tr>
+        
+                            <tr>
+                                    <td colspan="3"><p id="otsikko">Entä sukupuolesi, haluatko kertoa?</p></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="radio" name="mies">Mies</td>
+                                    <td><input type="radio" name="nainen">Nainen</td>
+                                    <td><input type="radio" name="eitietoa">En kerro</td>
+                            </tr>
+        
+                            <tr>
+                                    <td id="tyhja"></td>
+                            </tr>
+        
+                            <tr>
+                                    <td colspan="3"><p id="otsikko">Mitäs koodailet?</p></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="checkbox" name="css">CSS:ää</td>
+                                    <td><input type="checkbox" name="html">HTML:ää</td>
+                                    <td><input type="checkbox" name="php">PHP:tä</td>
+                            </tr>
+        
+                            <tr>
+                                    <td id="tyhja"></td>
+                            </tr>
+        
+                            <tr>
+                                    <td colspan="3"><p id="otsikko">Mitäs haluasint oppia?</p></td>
+                            </tr>
+                            <tr>
+                                    <td><input type="checkbox" name="jscript">JS:ää</td>
+                                    <td><input type="checkbox" name="javaa">Javaa</td>
+                                    <td><input type="checkbox" name="python">Pythonia</td>
+                            </tr>
+                            
+                            <tr>
+                                    <td id="tyhja"></td>
+                            </tr>
+        
+        
+                            <tr>
+                                    <td colspan="3"><p id="otsikko">Laita suosikkisi seuraaviin kohtiin:</p></td>
+                            </tr>
+                            <tr>
+                                    <td>Käyttöjärjestelmä:<select name="kayttis">
+                                            <option value="osx">OSX</option>
+                                            <option value="linux">Linux</option>
+                                            <option value="win">Windows</option></td>
+                                    <td>Selain:<select name="kayttis">
+                                            <option value="crome">Chrome</option>
+                                            <option value="opera">Opera</option>
+                                            <option value="ie">IE</option></td>
+                                    <td>Resoluutio:<select name="reso">
+                                            <option value="fullhd">1080p</option>
+                                            <option value="2k">1440p</option>
+                                            <option value="4k">4K</option></td>
+                            </tr>
+        
+                        </table>
+                <br>
+                <input type="button" value="Lähetä">
+            </form>
+            
+        </div>
+
+        <div class="footer">
+            <p id=footer>footer</p>
+        </div>
+
+        
+
+    </div>
+
+</body>
+
+</html>

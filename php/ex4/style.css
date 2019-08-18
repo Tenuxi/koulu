@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #131313;
+}
+
+header {
+    background: transparent;
+    color: #92b683;
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.flexi {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+.tehtavat {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+}
+
+.hedelmakuvat {
+    max-width: 200px;
+}
+
+#hedelmakuva1 {
+    width: 100%;
+}
+
+#hedelmakuva2 {
+    width: 100%;
+}
+
+#hedelmakuva3 {
+    width: 100%;
+}
+
+#hedelmakuva4 {
+    width: 100%;
+}
+
+#hedelma1 {
+    width: 25%;
+    background-color: #dfdfdf;
+    margin: 5px;
+    max-height: 2000px;
+}
+
+#hedelma2 {
+    width: 25%;
+    background-color: #dfdfdf;
+    margin: 5px;
+    max-height: 2000px;
+}
+
+#hedelma3 {
+    width: 25%;
+    background-color: #dfdfdf;
+    margin: 5px;
+    max-height: 2000px;
+}
+
+#hedelma4 {
+    width: 25%;
+    background-color: #dfdfdf;
+    margin: 5px;
+    max-height: 2000px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .flexi {
+        flex-direction: column;
+    }
+
+    #hedelma1 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #hedelma2 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #hedelma3 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #hedelma4 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+} 

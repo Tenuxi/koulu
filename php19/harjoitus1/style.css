@@ -1,0 +1,125 @@
+body {
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    float: right;
+    font-weight: bold;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+a {
+    color: #344367;
+}
+
+a:hover {
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.section1 {
+    background-color: #bddded;
+}
+
+.section2 {
+    background-color: #bddded;
+    border: 1px solid #000000;
+    margin-top: 10px;
+}
+
+.section3 {
+    background-color: #bddded;
+    border: 1px solid #000000;
+    margin-top: 10px;
+}
+
+.logo {
+    background-color: #344367;
+    color: #ffffff;
+    float: left;
+    text-align: center;
+    padding: 0.1em 0.1em 0;
+    font-size: 500%;
+    width: 1.2em;
+    border: solid white 1px;
+    border-width: 0 0.2em 0.2em 0;
+    margin: 0 0.5em 0.2em 0;
+}
+
+.header {
+    background-color: #88aacc;
+    float: right;
+    width: 100%;
+    min-height: 20px;
+}
+
+.vasenkuva {
+    float: left;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    background: white;
+    color: black;
+    border: solid black 1px;
+    border-width: 0 1px 1px 0;
+    padding: 0 10px 5px 0;
+    margin: -21px 25px 10px -1px;
+}
+
+.vasenlaatikko {
+    float: left;
+    width: 25%;
+    text-align: center;
+    background: white;
+    color: black;
+    border: solid black 1px;
+    border-width: 0 1px 1px 0;
+    padding: 0 10px 5px 0;
+    margin: -21px 25px 10px -1px;
+}
+
+.oikealaatikko {
+    float: right;
+    width: 25%;
+    text-align: left;
+    font-size: 140%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 1em;
+    text-indent: -0.5em;
+    background: white;
+    color: black;
+    border: solid black 1px;
+    border-width: 1px 0 1px 1px;
+    margin: 0.2em -1px 0.2em 0.5em;
+}
+
+
+/* CSS tyyli mobiilille */
+@media only screen and (max-width: 425px) {
+    body {
+      background-color: lightblue;
+      margin: 0;
+    }
+
+    .oikealaatikko {
+        font-size: 90%;
+    }
+
+    .vasenlaatikko {
+        font-size: 80%;
+    }
+  }
