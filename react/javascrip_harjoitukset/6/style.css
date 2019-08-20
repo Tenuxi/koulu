@@ -49,6 +49,14 @@ header{
     box-shadow: 10px 10px 5px -5px rgba(66,98,107,1);
 }
 
+#div1{
+    background-color: green;
+}
+
+#div2{
+    background-color: greenyellow;
+}
+
 .footer{
     text-align: center;
 }

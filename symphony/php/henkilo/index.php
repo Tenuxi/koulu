@@ -19,8 +19,9 @@
 
 <header class="jumbotron jumbotron-fluid"><h2>Henkilö testi</h2></header>
 
+<?php echo "toimii"; ?>
 
-<!-- DIVI -->
+<!-- DIVIT -->
 
 <div id="keltainen" class="alert alert-warning">
 
@@ -48,6 +49,10 @@
     ?>
     
 </div>
+
+
+
+
 
 
 </body>

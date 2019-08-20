@@ -6,6 +6,13 @@ class Henkilo{
     // Julkista muuttujaa voidaan kutsua luokan ulkopuolelta (VAR tai PUBLIC)
     public $nimi;
 
+
+    // Konstruktori on luokkaan kuuluva erikoismetodi.
+    // Konstruktorin avulla voidaan alustaa luokan ominaisuudet
+    public function _construct($nimi){
+        $this->nimi = $nimi;
+    }
+
     // get metodin avulla voidaan hakea tietyn ominaisuuden arvo
     //juskista metodia (public) voidaan kutsua toisesta ohjelmasta
     public function getNimi(){

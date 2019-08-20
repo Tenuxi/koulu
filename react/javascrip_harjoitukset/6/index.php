@@ -29,17 +29,17 @@
 
 
     <!-- Header ------------------------------------------------------------------>
-    <header>Harjoituksen nimi</header>
+    <header>2 Diviä</header>
 
 
 
     <!-- Pieni "Huom" Div -------------------------------------------------------->
 
-<!--
+
     <div id="huomautus" class="alert alert-danger" role="alert">
-        
+        Pituus = toisen korkeus
     </div>
--->
+
 
 
 
@@ -53,6 +53,9 @@
     </div>
 -->
 
+    <!--  Divit ------------------------------------------------------------------>
+    <div id="div1"></div>
+    <div id="div2"></div>
 
 
     <!-- 70% Leveä Div ------------------------------------------------------------>

@@ -29,18 +29,20 @@
 
 
     <!-- Header ------------------------------------------------------------------>
-    <header>Harjoituksen nimi</header>
+    <header>Näppäimistö</header>
 
 
 
     <!-- Pieni "Huom" Div -------------------------------------------------------->
 
-<!--
-    <div id="huomautus" class="alert alert-danger" role="alert">
-        
-    </div>
--->
 
+    <div id="huomautus" class="alert alert-danger" role="alert">
+    "Enter" -näppäintä, viesti “Bravo”. Jos painat jotakin muuta näppäintä, näytölle ilmestyy "Yritä uudelleen".
+    </div>
+
+    <div id="huomautus2" class="alert alert-info" role="alert" style="display:none;">
+        Yritä uudelleen!
+    </div>
 
 
     <!-- 95% Leveä Div ------------------------------------------------------------>

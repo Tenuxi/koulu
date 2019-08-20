@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    color: #131313;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    font-size: 3em;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid #131313;
+}
+
+#navigaatio{
+    text-align: center;
+    color: #131313;
+}
+
+.nav-item{
+    display: inline;
+}
+
+.nav-link{
+    color: #131313;
+    display:inline-block;
+}
+
+#napit{
+    color: #131313;
+    text-align: center;
+}
+
+.btn{
+    color: #131313;
+    border: 1px solid #131313;
+}
+
+
+#huomautus{
+    text-align: center;
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-bottom: 15px;
+    box-shadow:  10px 10px 5px -5px rgba(176,42,64,1);
+}
+
+
+#leveaDiv{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(66,98,107,1);
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px -5px rgba(66,98,107,1);
+}
+
+
+#kapeaDiv{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(66,98,107,1);
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px -5px rgba(66,98,107,1);
+}
+
+.footer{
+    text-align: center;
+}

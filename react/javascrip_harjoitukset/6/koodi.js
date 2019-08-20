@@ -1,1 +1,1 @@
-console.log ("TESTI");
+console.log ("JS ladattu");

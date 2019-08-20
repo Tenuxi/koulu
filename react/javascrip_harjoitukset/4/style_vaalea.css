@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    color: #131313;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header{
+    font-size: 3em;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    border-bottom: 2px solid #131313;
+}
+
+#navigaatio{
+    text-align: center;
+    color: #131313;
+}
+
+.nav-item{
+    display: inline;
+}
+
+.nav-link{
+    color: #131313;
+    display:inline-block;
+}
+
+#napit{
+    color: #131313;
+    text-align: center;
+}
+
+.btn{
+    color: #131313;
+    border: 1px solid #131313;
+}
+
+
+#huomautus{
+    text-align: center;
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 20%;
+    margin-bottom: 15px;
+    box-shadow:  10px 10px 5px -5px rgba(176,42,64,1);
+}
+
+
+#leveaDiv{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 2.5%;
+    width: 95%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(66,98,107,1);
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px -5px rgba(66,98,107,1);
+}
+
+
+#kapeaDiv{
+    background-color: #ffffff;
+    color: #000000;
+    margin-left: 15%;
+    height: 1500px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(66,98,107,1);
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px -5px rgba(66,98,107,1);
+}
+
+/*POPUP*/
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    height: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 500px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+.footer{
+    text-align: center;
+}
