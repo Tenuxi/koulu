@@ -20,6 +20,7 @@
     <!-- Title ------------------------------------------------------------------>
     <title>Harjoitus 5</title>
 
+    <?php include("linkkiLuokka.php"); ?>
 
 </head>
 <body>
@@ -111,13 +112,18 @@ Koodaa sovellus (linkkiTesti.php) jolla voit testata luokan toimintaa. Käytä t
 
     <!-- 70% Leveä Div ------------------------------------------------------------>
 
-<!--
+
     <div id="kapeaDiv" class="container">
 
-        
+    <!-- PHP ---------------------------------------------------------------------->
+
+    <?php 
+        echo tulostaTiedot();
+    ?>
+    
 
     </div>
--->
+
 
 
 
