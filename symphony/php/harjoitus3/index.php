@@ -75,13 +75,25 @@
 
     <!-- 95% Leveä Div ------------------------------------------------------------>
 
-<!--
+
     <div id="leveaDiv" class="container-fluid">
         
+        <pre>
+        Koodaa Oppilas-luokka, jolla on seuraavat ominaisuudet
 
+        * etunimi
+
+        * sukunimi
+
+        * kotiosoite
+
+        * email
+
+        Koodaa sovellus (oppilasTesti.php), joka tulostaa oppilaiden tiedot. Käytä konstruktoria.
+        </pre>
 
     </div>
--->
+
 
 
 

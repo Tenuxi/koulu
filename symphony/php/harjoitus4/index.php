@@ -20,7 +20,7 @@
     <!-- Title ------------------------------------------------------------------>
     <title>Harjoitus 4</title>
 
-    <?php include("oppilaTesti.php") ?>
+    <?php include("oppilasTesti2.php") ?>
 
 </head>
 <body>
@@ -81,7 +81,8 @@
 
 * opiskelijanumero
 
-Muokkaa Oppilas luokan konstruktoria lisäämällä siihen uusi parametri $opiskelijanro, sekä lisäämällä julkinen set-metodi opiskelijanumero muokkaamista varten ja yksityinen get-metodi, jota muut metodit voivat käyttää.
+Muokkaa Oppilas luokan konstruktoria lisäämällä siihen uusi parametri $opiskelijanro, 
+sekä lisäämällä julkinen set-metodi opiskelijanumero muokkaamista varten ja yksityinen get-metodi, jota muut metodit voivat käyttää.
 
 Lisää vielä Oppilas-luokkaan julkinen metodi tulostaOppilas, joka palauttaa oppilaan kaikki tiedot mukaan lukien hänen opiskelijanumeronsa.
 
@@ -102,19 +103,25 @@ Muuta sitten set-metodin avulla oppilaan opiskelijanumroa ja tulosta hänen tiet
     <div id="kapeaDiv" class="container">
 
     <?php
-        // Luodaan Henkilo-luokasta ilmentymä/olio Kaija
-        $kaija = new Henkilo("Kaija Kokkonen");
-        // Tulostetaan Kaijan koko nimi
-        print("Kaijan koko nimi on " .$kaija->getNimi() ."<br>");
-
-        //Lisätään pinkoodi kaijalle
-        $kaija->setPinkoodi("0003");
-
-        //Printtaillaan kaijan tiedot
-        echo $kaija->tulostaHenkilo();
         
+        $jaska = new oppilasLuokka(123123, "Jaska", "Jokunen", "Kannelmaki 2 a 4, Helsinki", "jaska.jokunen@email.com");
+        $jonna = new oppilasLuokka(0002340, "Jonna", "Jokunen", "Kannelmaki 2 a 4, Helsinki", "jonna.jokunen@email.com");
 
-        
+
+        echo "<h3>Alkuperäinen tulostus</h3>";
+        echo $jaska->tulostaTiedot();
+        echo "<br> <hr> <br>";
+        echo $jonna->tulostaTiedot();
+        echo "<br> <br> <br>";
+        echo "<h3>Muutettu numero</h3>";
+
+        $jaska->setOpiskelijanumero(456789);
+        $jonna->setOpiskelijanumero(332332);
+
+        echo $jaska->tulostaTiedot();
+        echo "<br> <hr> <br>";
+        echo $jonna->tulostaTiedot();
+
     ?>
 
     </div>

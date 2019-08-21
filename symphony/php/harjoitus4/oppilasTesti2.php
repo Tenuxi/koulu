@@ -1,48 +1,68 @@
 <?php
 
 
-// Tehty luokka HENKILO
-class Henkilo{
-    // Julkista muuttujaa voidaan kutsua luokan ulkopuolelta (VAR tai PUBLIC)
-    public $nimi;
+class oppilasLuokka
+{
 
-    //Yksityinen (Private) muuttuja on sellainen johon pääsee käsiksi vain luokan sisältä
-    private $pinkoodi;
 
-    //Privaattia metodia voidaan kutsua vain luokan sisältä
-    //Privaatti getteri
-    private function getPinkoodi(){
-        return $this->pinkoodi;
+    public $etunimi;
+    public $sukunimi;
+    public $osoite;
+    public $email;
+
+
+
+    private $opiskelijanumero;
+
+
+
+
+    public function __construct($opiskelijanumero, $etunimi, $sukunimi, $osoite, $email)
+    {
+        $this->etunimi = $etunimi;
+        $this->sukunimi = $sukunimi;
+        $this->osoite = $osoite;
+        $this->email = $email;
+        $this->opiskelijanumero = $opiskelijanumero;
     }
 
-    //julkinen setteri
-    public function setPinkoodi($pinkoodi){
-        $this->pinkoodi = $pinkoodi;
+
+    private function getOpiskelijanumero()
+    {
+        return $this->opiskelijanumero;
     }
 
-    //koodataan oma metodi joka tulostaa henkilön nimen ja pinkoodin
-    public function tulostaHenkilo(){
-        return "henkilön nimi on " . $this->getNimi() . " ja hänen pinkoodinsa on: " . $this->getPinkoodi();
+    public function setOpiskelijanumero($opiskelijanumero)
+    {
+        $this->opiskelijanumero = $opiskelijanumero;
     }
 
-    // Konstruktori on luokkaan kuuluva erikoismetodi.
-    // Konstruktorin avulla voidaan alustaa luokan ominaisuudet
-    public function __construct($nimi){
-        $this->nimi = $nimi;
+
+    public function tulostaTiedot()
+    {
+        return "Tiedot on:" . "<br>" . "Opiskelija numero: " . $this->getOpiskelijanumero() . "<br>" . "Nimi: " .$this->etunimi . " " . $this->sukunimi . "<br>" . "Osoite: " . $this->osoite . "<br>" . "Sähköposti: " . $this->email;
     }
 
-    // get metodin avulla voidaan hakea tietyn ominaisuuden arvo
-    //juskista metodia (public) voidaan kutsua toisesta ohjelmasta
-    public function getNimi(){
-        //palauttaa arvon "nimi"
-        return $this->nimi;
+
+    public function getEtunimi()
+    {
+        return $this->etunimi;
     }
-    //set metodi asettaa arvon muuttujalle
-    //muutettava arvo välitetään parametrinä
-    public function setNimi($nimi){
-        //asettaa muuttujalle nimi arvon nimi
-        $this->nimi = $nimi;
+
+    public function getSukunimi()
+    {
+        return $this->sukunimi;
+    }
+
+
+    public function getOsoite()
+    {
+        return $this->osoite;
+    }
+
+
+    public function getEmail()
+    {
+        return $this->email;
     }
 }
-
-?>
