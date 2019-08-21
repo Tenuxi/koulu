@@ -18,7 +18,7 @@
         
 
     <!-- Title ------------------------------------------------------------------>
-    <title>Harjoitus pohja</title>
+    <title>Harjoitus 3</title>
 
     <?php include("oppilasTesti.php"); ?>
 

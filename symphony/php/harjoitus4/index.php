@@ -18,8 +18,9 @@
         
 
     <!-- Title ------------------------------------------------------------------>
-    <title>Harjoitus pohja</title>
+    <title>Harjoitus 4</title>
 
+    <?php include("oppilaTesti.php") ?>
 
 </head>
 <body>
@@ -30,7 +31,7 @@
 
 
     <!-- Header ------------------------------------------------------------------>
-    <header>Harjoituksen nimi</header>
+    <header>Harjoitus 4</header>
 
 
 
@@ -74,25 +75,50 @@
 
     <!-- 95% Leveä Div ------------------------------------------------------------>
 
-<!--
+
     <div id="leveaDiv" class="container-fluid">
-        
+        <pre>Lisää Oppilas luokkaan uusi yksityinen (private) ominaisuus
+
+* opiskelijanumero
+
+Muokkaa Oppilas luokan konstruktoria lisäämällä siihen uusi parametri $opiskelijanro, sekä lisäämällä julkinen set-metodi opiskelijanumero muokkaamista varten ja yksityinen get-metodi, jota muut metodit voivat käyttää.
+
+Lisää vielä Oppilas-luokkaan julkinen metodi tulostaOppilas, joka palauttaa oppilaan kaikki tiedot mukaan lukien hänen opiskelijanumeronsa.
+
+Koodaa sovellus (oppilasTesti2.php), joka tulostaa oppilaiden tiedot tulostaOppilas-metodin avulla.
+
+Muuta sitten set-metodin avulla oppilaan opiskelijanumroa ja tulosta hänen tietonsa uudelleen
+</pre>
 
 
     </div>
--->
+
 
 
 
     <!-- 70% Leveä Div ------------------------------------------------------------>
 
-<!--
+
     <div id="kapeaDiv" class="container">
 
+    <?php
+        // Luodaan Henkilo-luokasta ilmentymä/olio Kaija
+        $kaija = new Henkilo("Kaija Kokkonen");
+        // Tulostetaan Kaijan koko nimi
+        print("Kaijan koko nimi on " .$kaija->getNimi() ."<br>");
+
+        //Lisätään pinkoodi kaijalle
+        $kaija->setPinkoodi("0003");
+
+        //Printtaillaan kaijan tiedot
+        echo $kaija->tulostaHenkilo();
         
 
+        
+    ?>
+
     </div>
--->
+
 
 
 

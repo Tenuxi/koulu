@@ -17,7 +17,7 @@
 
 <!-- header --> 
 
-<header class="jumbotron jumbotron-fluid"><h2>Harjoitus 1</h2></header>
+<header class="jumbotron jumbotron-fluid"><h2>Harjoitus 2</h2></header>
 
 
 <!-- DIVI -->
