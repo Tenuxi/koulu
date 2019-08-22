@@ -20,6 +20,7 @@
     <!-- Title ------------------------------------------------------------------>
     <title>Harjoitus 6</title>
 
+        <?php include("matikkaTesti.php");?>
 
 </head>
 <body>
@@ -67,6 +68,9 @@
 <!--
     <div id="huomautus" class="alert alert-danger" role="alert">
         
+
+    
+
     </div>
 -->
 
@@ -104,13 +108,45 @@ Piirrä Visiolla luokka Matikka ja sen metodit. Set- ja get-metodeja ei tarvitse
 
     <!-- 70% Leveä Div ------------------------------------------------------------>
 
-<!--
+
     <div id="kapeaDiv" class="container">
 
-        
+    <?php
+    
+    $testi = new Matikka();
+       echo "Kalorit (50) Jouleina: " .$testi->muunnaKaloritJouleiksi(50) ." (Oikea vastaus noin: 209,3 Joulea)";
+       echo "<br><br>";
+       echo "Joulet (600) Kaloreiksi: " .$testi->muunnaJouletKaloreiksi(600) ." (Oikea vastaus noin: 143,3 Kaloria)";
+       echo "<br><br>";
+       // Testataan energiamuunninta
+       $kalori = 80;
+       echo $testi->energiamuunnin($kalori); // toinen jää oletuksena nollaksi
+       echo "<br><br>";
+       // $sade = 8;
+       // echo $testi->laskeYmpyranAla($sade);
+       echo "Ympyrän (säde = (8) pinta-ala on: " .$testi->laskeYmpyranAla(8) ." (Oikea vastaus noin: 201,1 m2)";
+       echo "<br><br>";
+       // $testi->setSuorakulmionAla(12);
+       // echo $testi->getSuorakulmionAla();
+       echo "Suorakulmion (sivut: 3 ja 4) pinta-ala on: " .$testi->laskeSuorakulmionAla(3, 4) ." (Oikea vastaus: 12 m2)";
+       echo "<br><br>";
+       echo "Celsiukset (6) Fahrenheiteiksi: " .$testi->muunnaCelsiuksetFahrenheiteksi(6) ." (Oikea vastaus: 42,8 Fahrenheitia)";
+       echo "<br><br>";
+       echo "Fahrenheitit (59) Celsiuksiksi: " .$testi->muunnaFahrenheititCelsiuksiksi(59) ." (Oikea vastaus: 15 Celsiusta)";
+       echo "<br><br>";
+       echo "Radiaanit (1,57) asteiksi: " .$testi->muunnaRadiaanitAsteiksi(1.57) ." (Oikea vastaus noin: 90 astetta)";
+       echo "<br><br>";
+
+       // $testi->setSuorakulmionAla(12);
+       // echo $testi->getSuorakulmionAla();
+       /* LASKEE JA TALLENTAA:
+       $testi->laskeSuorakulmionAla(3, 4);
+       echo "Suorakulmion (3 * 4) pinta-ala on: " .$testi->getSuorakulmionAla();
+       */
+
+      ?>
 
     </div>
--->
 
 
 

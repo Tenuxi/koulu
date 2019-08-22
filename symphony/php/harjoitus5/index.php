@@ -110,6 +110,7 @@ Koodaa sovellus (linkkiTesti.php) jolla voit testata luokan toimintaa. Käytä t
 
 
 
+
     <!-- 70% Leveä Div ------------------------------------------------------------>
 
 
@@ -118,7 +119,12 @@ Koodaa sovellus (linkkiTesti.php) jolla voit testata luokan toimintaa. Käytä t
     <!-- PHP ---------------------------------------------------------------------->
 
     <?php 
-        echo tulostaTiedot();
+        
+        $osoite1 = new LinkkiLuokka(01, "http://www.mysql.com", "MySQL-tietokannan kotisivu", "Relaatiotietokanta", "mysql");
+
+        echo $osoite1->tulostaTiedot();
+
+        
     ?>
     
 
