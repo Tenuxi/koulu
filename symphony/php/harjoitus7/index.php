@@ -20,6 +20,8 @@
     <!-- Title ------------------------------------------------------------------>
     <title>Harjoitus 7</title>
 
+    <?php include("auto.php"); ?>
+
 
 </head>
 <body>
@@ -53,22 +55,30 @@
 
     <!-- Nappit ------------------------------------------------------------------>
 
-<!--
+
     <div id="napit">
-        <button type="button" class="btn btn-primary">Nappi</button>
-        <button type="button" class="btn btn-primary">Nappi</button>
+        <button type="button" class="btn btn-primary">Käynnistä auto</button>
+        <button type="button" class="btn btn-primary" disabled>Nappi</button>
     </div>
-    -->
+ 
 
 
 
     <!-- Pieni "Huom" Div -------------------------------------------------------->
 
-<!--
+
     <div id="huomautus" class="alert alert-danger" role="alert">
         
+        <?php
+
+            //UUSI AUTO
+            $autoAudi = new Auto("KDV-321", "Audi", "A8", 65);
+
+            echo $autoAudi->tulostaAutonTiedot();
+        ?>
+
     </div>
--->
+
 
 
 
