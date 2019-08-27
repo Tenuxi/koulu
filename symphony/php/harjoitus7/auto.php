@@ -1,18 +1,81 @@
 <?php
 
+class Auto {
+        public $rekisterinumero;
+        public function getRekisterinumero() {
+            return $this->rekisterinumero;
+        }
+        public function setRekisterinumero($numero) {
+            $this->rekisterinumero = $numero;
+        }
+        public $merkki;
+        public function getMerkki() {
+            return $this->merkki;
+        }
+        public function setMerkki($merkki2) {
+            $this->merkki = $merkki2;
+        }
+        public $malli;
+        public function getMalli() {
+            return $this->malli;
+        }
+        public function setMalli($malli2) {
+            $this->malli = $malli2;
+        }
+        public $valmistusvuosi;
+        public function getValmistusvuosi() {
+            return $this->valmistusvuosi;
+        }
+        public function setValmistusvuosi($vuosi) {
+            $this->valmistusvuosi = $vuosi;
+        }
+        private $tankinTilavuus;
+        private function getTankinTilavuus() {
+            return $this->tankinTilavuus;
+        }
+        public function setTankinTilavuus($tilavuus) {
+            $this->tankinTilavuus = $tilavuus;
+        }
+        private $bensanMaara;
+        private function getBensanMaara() {
+            return $this->bensanMaara;
+        }
+        public function setBensanMaara($maara) {
+            $this->bensanMaara = $maara;
+        }
+        public function __construct($rekisterinumero, $merkki, $malli, $valmistusvuosi, $tankinTilavuus, $bensanMaara) {
+            $this->rekisterinumero = $rekisterinumero;
+            $this->merkki = $merkki;
+            $this->malli = $malli;
+            $this->valmistusvuosi = $valmistusvuosi;
+            $this->tankinTilavuus = $tankinTilavuus;
+            $this->bensanMaara = $bensanMaara;
+        }
+        public function tulostaAutonTiedot() {
+            return "AUTON TIEDOT<br>Rekisterinumero: " .$this->getRekisterinumero() ."<br>Merkki: " .$this->getMerkki() ."<br>Malli: " .$this->getMalli() ."<br>Valmistusvuosi: " .$this->getValmistusvuosi() ."<br>Tankin tilavuus: " .$this->getTankinTilavuus() ." litraa<br>Bensan määrä: " .$this->getBensanMaara() ." litraa";
+        }
+        public function kaynnisty() {
+            return "KÄYNNISTYMINEN<br>Auto on käynnistynyt.<br>Bensan määrä: " .$this->getBensanMaara() ." litraa<br>Tankin tilavuus: " .$this->getTankinTilavuus() ." litraa";
+        }
+        public function lisaaBensaa() {
+        }
+    }
+
+
+/*
 class Auto
 {
 
     //Privaattit
-//    private $tankinTilavuus;
-//    private $bensanMaara;
+    private $tankinTilavuus;
+    private $bensanMaara;
 
     //Julkiset
-//    public $kaynnisty;
-    // public $tulostaAutonTiedot;
-//    public $lisaaBensaa;
-//    public $aja;
-//    public $sammuta;
+    public $kaynnisty;
+    public $tulostaAutonTiedot;
+    public $lisaaBensaa;
+    public $aja;
+    public $sammuta;
 
     public $rekisteri;
     public $merkki;
@@ -31,22 +94,16 @@ class Auto
 
 
     function tulostaAutonTiedot(){
-        return "Rekisteri: " . $this->rekisteri . "<br>" . "Merkki: " . $this->merkki . "<br>" . "Malli: " . $this->malli . "<br>" . "Bensaa tankissa: " . $this->bensaaTankissa . "/l";
+        return "Rekisteri: " . $this->getRekisteri() . "<br>" . "Merkki: " . $this->getMerkki() . "<br>" . "Malli: " . $this->getMalli() . "<br>" . "Bensaa tankissa: " . $this->getBensaaTankissa() . "/l";
     }
 
-        /**
-         * Get the value of rekisteri
-         */ 
+        
         public function getRekisteri()
         {
                 return $this->rekisteri;
         }
 
-        /**
-         * Set the value of rekisteri
-         *
-         * @return  self
-         */ 
+      
         public function setRekisteri($rekisteri)
         {
                 $this->rekisteri = $rekisteri;
@@ -54,19 +111,13 @@ class Auto
                 return $this;
         }
 
-        /**
-         * Get the value of merkki
-         */ 
+     
         public function getMerkki()
         {
                 return $this->merkki;
         }
 
-        /**
-         * Set the value of merkki
-         *
-         * @return  self
-         */ 
+  
         public function setMerkki($merkki)
         {
                 $this->merkki = $merkki;
@@ -74,19 +125,12 @@ class Auto
                 return $this;
         }
 
-        /**
-         * Get the value of malli
-         */ 
         public function getMalli()
         {
                 return $this->malli;
         }
 
-        /**
-         * Set the value of malli
-         *
-         * @return  self
-         */ 
+ 
         public function setMalli($malli)
         {
                 $this->malli = $malli;
@@ -94,19 +138,13 @@ class Auto
                 return $this;
         }
 
-        /**
-         * Get the value of bensaaTankissa
-         */ 
+  
         public function getBensaaTankissa()
         {
                 return $this->bensaaTankissa;
         }
 
-        /**
-         * Set the value of bensaaTankissa
-         *
-         * @return  self
-         */ 
+
         public function setBensaaTankissa($bensaaTankissa)
         {
                 $this->bensaaTankissa = $bensaaTankissa;
@@ -114,5 +152,7 @@ class Auto
                 return $this;
         }
 }
+
+*/
 
 ?>
