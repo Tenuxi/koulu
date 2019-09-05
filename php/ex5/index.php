@@ -58,6 +58,9 @@ require("db.php");
         if($page=="tilattu") {
             include("tilattu.php");
         }
+        if($page=="testi") {
+            include("testi.php");
+        }
         
     ?>
     
