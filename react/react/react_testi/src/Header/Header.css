@@ -1,0 +1,12 @@
+.header {
+    background-color: #00354e;
+    text-align: center;
+    height: 150px;
+    width: 70%;
+    margin-left: 15%;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    color: rgb(206, 206, 197);
+    border-radius: 35px 5px 35px 5px;
+    box-shadow: 15px 15px 5px #6bc9f5;    
+}
