@@ -5,6 +5,8 @@ import Main from './Main/Main';
 import Footer from './Footer/Footer';
 
 
+
+
 const App = () => {
   const now = new Date();
   const a = 10;
@@ -15,15 +17,15 @@ const App = () => {
 
   return (
     <div className='app'>
+      <Header
+        title='This is Header component'
+        text='This is some text in Header component'
+      />
       <div>
         <p>Päivämäärä on: {now.toString()}</p>
         <p>{a} + {b} =  { a + b }</p>
         <h2>{ elain  + nimi }</h2>
       </div>
-      <Header
-        title='This is Header component'
-        text='This is some text in Header component'
-      />
       <Main
         title='This is Main component'
         text='This is some text in Main component passed via props'
