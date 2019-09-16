@@ -69,6 +69,34 @@ class YhteydenHallinta{
         $this->yhteys = null;
     }
 
+    // Metodia kutusutaan kun suoritetaan lisäys (insert), poisto (delete) 
+    // tai päivitys (update)
+    public function suoritaPaivitysLause($sqlLause, $parametritaulukko = Array()){
+        echo $sqlLause;
+        // avaa tietkantayhteys
+        $this->avaaYhteys();
+
+        try{
+            // Valmistellaa SQL-lause
+            $suoritettavaLause = $this->yhteys->prepare($sqlLause);
+            // Suoritetaan SQL-lause palvelimella
+            $suoritettavaLause->execute($parametritaulukko);
+
+            // Palautta tietueiden määrän (0 = ei tietuetta)
+            $lkm = $suoritettavaLause->rowCount();
+            
+            // SUljetaan tietokantayhteys
+            $this->suljeYhteys();
+        }
+        catch(PDOException $e){
+            // Jos tuli virhe asetaan tietueiden määr nollaksi
+            $lkm = 0;
+        }
+        // Palauetaan tietueiden määrä
+        return $lkm;
+    }
+
+
 }
 
 ?>
