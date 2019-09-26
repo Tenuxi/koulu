@@ -1,6 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Button from '@material-ui/core/Button';
+
+import Header from './Header/Header';
+import Navigation from './Navigation/Navigation';
 
 function App() {
   return (
@@ -9,10 +12,23 @@ function App() {
     
     <div className="App">
       <React.Fragment>
-      
-        <Button variant="contained" color="secondary">
-          Nappi
-        </Button>
+
+        <Header 
+        
+        title='Kasvi kauppa' 
+        slogan='halvat viherkasvit'
+        
+        />
+          
+        
+        <Navigation
+        
+         // <Button variant="contained" color="secondary">
+         // Nappi
+         // </Button>
+        
+        />
+        
         </React.Fragment>
     </div>
   );

@@ -1,0 +1,16 @@
+.navigation{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 8px;
+    margin: 0 10px 10px 10px;
+    text-align: center;
+}
+
+.navigation ul li{
+    display: inline-block;
+    padding: 3px 15px 3px 15px;
+    margin: 0 15px 0 15px;
+    background-color: #adadad;
+    /*background-image: linear-gradient(to right, #053714, #1f6120, #448e26, #71bc24, #a8eb12);*/    border-radius: 5px;
+    font-weight: bold;
+}
