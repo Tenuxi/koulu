@@ -9,6 +9,7 @@ import { Toolbar } from '@material-ui/core';
 
 import MainNavigation from './MainNavigation/MainNavigation';
 import Posts from './Post/Posts';
+import Footer from './Footer/Footer';
 
 
 import { makeStyles } from '@material-ui/styles';
@@ -50,7 +51,10 @@ const App = () => {
 
       </Posts>
 
-
+      <Footer> 
+      
+        
+      </Footer>
     </div>
   );
 }

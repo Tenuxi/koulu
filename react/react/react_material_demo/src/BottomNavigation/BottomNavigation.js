@@ -1,17 +1,17 @@
 import React from 'react';
 import { List, ListItemText, ListItem, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
-import Icon from '@material-ui/core/Icon';
+import './BottomNavigation.css';
 
 const useStyles = makeStyles({
     root: {
-        margin: "100px 0 0 0",
+        width: 300,
+        float: "left",
     },
     listitem: {
-        display: "inline-block",
-        width: 150,
-        textAlign: "right",        
+        color: "#ffffff",
+        width: 300,
+        float: "left",
     },
     
   });
@@ -40,16 +40,16 @@ const listitems = [
     },
 ]
 
-const MainNavigation = () => {
+const BottomNavigation = () => {
     const classes = useStyles();
     return (
-        <div>
+        <div className="bottomnavigation">
             <List component="nav">
                 {listitems.map(item => (
                 <ListItem className={classes.listitem} key={item.id}>
                     <ListItemText>
                         <Typography>
-                        <Icon>star</Icon> {item.text}
+                            {item.text}
                         </Typography>
                     </ListItemText>
                 </ListItem>
@@ -61,4 +61,4 @@ const MainNavigation = () => {
     );
 };
 
-export default MainNavigation;
+export default BottomNavigation;
