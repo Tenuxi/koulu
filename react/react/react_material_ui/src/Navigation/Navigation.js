@@ -5,9 +5,9 @@ const Navigation = (props) => {
     return (
         <div className="navigation">
             <ul>
-                <li>Linkki</li>
-                <li>Linkki</li>
-                <li>Linkki</li>
+                <li>Linkki 1</li>
+                <li>Linkki 2</li>
+                <li>Linkki 3</li>
             </ul>
         </div>
     );

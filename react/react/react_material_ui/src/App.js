@@ -1,11 +1,14 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
+
 
 import Header from './Header/Header';
 import Navigation from './Navigation/Navigation';
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
+import Kortit from './Main/Kortit/Kortit';
 
-function App() {
+
+const App = () => {
   return (
 
 
@@ -14,21 +17,26 @@ function App() {
       <React.Fragment>
 
         <Header 
-        
+        image='<img'
         title='Kasvi kauppa' 
         slogan='halvat viherkasvit'
         
         />
           
         
-        <Navigation
+        <Navigation/>
         
-         // <Button variant="contained" color="secondary">
-         // Nappi
-         // </Button>
-        
+        <Main>
+          <Kortit />
+          
+        </Main>
+
+        <Footer 
+        slogan='Copyright - Joonas 2019'
         />
+          
         
+
         </React.Fragment>
     </div>
   );

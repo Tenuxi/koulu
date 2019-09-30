@@ -52,10 +52,10 @@ const useStyles = makeStyles({
 });
 
 
-const Posts = () => {
+const Kortit = () => {
     const classes = useStyles();
     return (
-        <div style={{ marginTop: "150px" }}>
+        <div style={{ marginTop: "200px" }}>
             <Grid container justify="center" alignItems="center" spacing={2}>
                 {postitems.map(item => (
 
@@ -90,4 +90,4 @@ const Posts = () => {
     );
 };
 
-export default Posts;
+export default Kortit;
