@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/styles';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 import Icon from '@material-ui/core/Icon';
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 const useStyles = makeStyles({
     root: {
         margin: "100px 0 0 0",
@@ -20,23 +22,13 @@ const useStyles = makeStyles({
 const listitems = [
     {
             text:"Etusivu",
+            path: '/',
             id: 1
     },
     {
-        text:"ToiNen",
+        text:"Contact",
+        path: '/contact',
         id: 2
-    },
-    {
-        text:"KolMasSivu",
-        id: 3
-    },
-    {
-        text:"4SiVu",
-        id: 4
-    },
-    {
-        text:"ViiTossivu",
-        id: 5
     },
 ]
 
@@ -48,9 +40,10 @@ const MainNavigation = () => {
                 {listitems.map(item => (
                 <ListItem className={classes.listitem} key={item.id}>
                     <ListItemText>
-                        <Typography>
+                        {/* <Typography>
                         <Icon>star</Icon> {item.text}
-                        </Typography>
+                        </Typography> */}
+                        <Link to={item.path}>{item.text}</Link>
                     </ListItemText>
                 </ListItem>
                 ))}

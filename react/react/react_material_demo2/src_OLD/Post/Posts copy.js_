@@ -8,6 +8,10 @@ import Button from '@material-ui/core/Button';
 import { Typography, CardHeader } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 
+import PostData from './PostData/PostData';
+
+//KOMMENTOI POST ITEMS ULOS!!!!!!!!!---------------------------------------
+
 const postitems = [
     {
         title: "postaus 1",
@@ -45,6 +49,9 @@ const postitems = [
         id: 5
     },
 ]
+
+////--------------------------------------------------------------------
+
 
 const useStyles = makeStyles({
     carditem: {
